@@ -1,4 +1,4 @@
-package com.automation.tests.day2;
+package com.automation.tests.Class.day2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +16,7 @@ public class BasicNavigation {
 
         driver.navigate().to("http://amazon.com");
         Thread.sleep(3000);
+        System.out.println("Current URL"  + driver.getCurrentUrl());
 
         if (driver.getTitle().toLowerCase().contains("amazon")){
             System.out.println("Test Passed");
